@@ -14,7 +14,7 @@ public class Ej5 {
 		int notasSegundo;
 		int notasTercer;
 		int notaMediaC;
-		double notaMediaEX;
+		double notaMedia;
 		
 		
 		//Establecemos el Scanner
@@ -29,12 +29,10 @@ public class Ej5 {
 		System.out.print("Introduzca las notas del tercer semestre: ");
 		notasTercer = sc.nextInt();
 		
-	
-		notaMediaC = ((notasPrimero + notasSegundo + notasTercer) / 3);
-		notaMediaEX = ((notasPrimero + notasSegundo + notasTercer) / 3);
+		notaMedia = (double) (notasPrimero + notasSegundo + notasTercer) / 3;
 		
-		System.out.println("Nota de boletin de Calificaciones: " + notaMediaC);
-		System.out.println("Nota de Expediente Academico: " + notaMediaEX);
+		System.out.println("Nota de boletin de Calificaciones: " + (int) notaMedia);
+		System.out.println("Nota de Expediente Academico: " + notaMedia);
 		
 		sc.close();
 		// TODO Auto-generated method stub
